@@ -64,14 +64,14 @@ const Modal = ({ closeModal, current }) => {
         <div className="footer">
           <div>
             {current.links.wikipedia && (
-              <a href={current.links.wikipedia.toString()}>
+              <a href={current.links.wikipedia.toString()} target='_blank'>
                 <i className="fa-brands fa-wikipedia-w"></i>
               </a>
             )}
           </div>
           <div>
             {current.links.video_link && (
-              <a href={current.links.video_link.toString()}>
+              <a href={current.links.video_link.toString()} target='_blank'>
                 <i className="fa-brands fa-youtube"></i>
               </a>
             )}
